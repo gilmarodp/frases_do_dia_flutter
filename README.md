@@ -2,4 +2,8 @@
 
 Um aplicativo simples que "gera" frases de motivação.
 
-![Screenshot](.github/screenshot.png)
+<img
+    alt="Screenshot do aplicativo"
+    src=".github/screenshot.png"
+    width="200"
+/>
