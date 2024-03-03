@@ -32,11 +32,23 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Frases do dia',
-          style: TextStyle(
-            color: Colors.white,
-          ),
+        title: const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Frases do dia',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+            CircleAvatar(
+              backgroundColor: Colors.white,
+              child: Text(
+                'GO',
+                style: TextStyle(color: Colors.black),
+              ),
+            )
+          ]
         ),
         backgroundColor: Colors.lightGreen,
       ),
