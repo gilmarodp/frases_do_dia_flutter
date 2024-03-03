@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Frases do dia',
           style: TextStyle(
             color: Colors.white,
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
       ),
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(12),
+          padding: const EdgeInsets.all(12),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
               Text(
                 _quoteOfDay,
                 textAlign: TextAlign.justify,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20,
                   fontStyle: FontStyle.italic
                 ),
@@ -63,14 +63,14 @@ class _HomeState extends State<Home> {
                     _quoteOfDay = _quotesOfDay[number];
                   });
                 },
-                child: Text(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateColor.resolveWith((states) => Colors.lightGreen),
+                ),
+                child: const Text(
                   'Nova Frase',
                   style: TextStyle(
                     color: Colors.white,
                   ),
-                ),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateColor.resolveWith((states) => Colors.lightGreen),
                 ),
               )
             ],
